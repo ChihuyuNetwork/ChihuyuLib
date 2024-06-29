@@ -2,7 +2,6 @@ plugins {
     kotlin("jvm") version "2.0.0"
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("org.jlleitschuh.gradle.ktlint") version "12.1.1"
-    id("xyz.jpenilla.run-paper") version "2.3.0"
     `maven-publish`
 }
 
@@ -53,10 +52,6 @@ tasks {
         relocate("org.jetbrains.annotations", "love.chihuyu.lib.org.jetbrains.annotations")
         relocate("org.intellij.lang.annotations", "love.chihuyu.lib.org.intellij.lang.annotations")
         archiveClassifier = ""
-    }
-
-    runServer {
-        minecraftVersion(pluginVersion)
     }
 }
 
