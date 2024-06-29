@@ -27,4 +27,4 @@ jobs:
           echo repoPassword=${{ secrets.DEPLOY_PASSWORD }} >> $HOME/.gradle/gradle.properties
       - name: Deploy
         run: |
-          ./gradlew clean test publish
+          ./gradlew clean test publishAllPublicationsToRepoRepository
