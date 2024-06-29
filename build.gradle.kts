@@ -47,10 +47,6 @@ tasks {
 
     shadowJar {
         exclude("org/slf4j/**")
-        relocate("kotlin", "love.chihuyu.lib.kotlin")
-        relocate("dev.jorel.commandapi", "love.chihuyu.lib.dev.jore.commandapi")
-        relocate("org.jetbrains.annotations", "love.chihuyu.lib.org.jetbrains.annotations")
-        relocate("org.intellij.lang.annotations", "love.chihuyu.lib.org.intellij.lang.annotations")
         archiveClassifier = ""
     }
 }
