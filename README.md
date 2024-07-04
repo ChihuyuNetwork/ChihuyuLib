@@ -1,5 +1,5 @@
 # ChihuyuLib
-Basic functions library for chihuyu network projects.
+Basic libraries shadowed for chihuyu developement.
 
 ## Included external libraries
 * CommandAPI
