@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "love.chihuyu"
-version = "0.0.2-SNAPSHOT"
+version = "0.0.3-SNAPSHOT"
 val pluginVersion: String by project.ext
 
 repositories {
@@ -63,9 +63,9 @@ publishing {
             credentials(PasswordCredentials::class)
             url = uri(
                 if (project.version.toString().endsWith("SNAPSHOT"))
-                    "https://repo.chihuyu.love/snapshots/"
+                    "https://chihuyu.love/repo/snapshots"
                 else
-                    "https://repo.chihuyu.love/releases/"
+                    "https://chihuyu.love/repo/releases"
             )
         }
     }
