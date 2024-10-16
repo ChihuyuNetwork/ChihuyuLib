@@ -23,7 +23,7 @@ repositories {
 
 dependencies {
     compileOnly("com.destroystokyo.paper:paper-api:$pluginVersion-R0.1-SNAPSHOT")
-    implementation("dev.jorel:commandapi-bukkit-shade:9.5.1")
+    implementation("dev.jorel:commandapi-bukkit-shade:9.5.3")
     implementation(kotlin("stdlib"))
 }
 
